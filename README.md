@@ -1,11 +1,13 @@
-# Titanic_Practice
+# Titanic - Machine Learning from Disaster ( Practice )
 * Data
   * Variables
   * Statistics
   * Correlation
   * PCA
-* Regularizing
- * Standardized
+* Data Processing
+  * One-hot-encoding
+  * Standardized
+* Cross-Validation
 * Modeling
   * Decision Tree
   * Randon Forest
@@ -15,30 +17,43 @@
 ## 1. DATA
 ### A. Variables
 | Variable | Definition | Key |
-|-------|:-----:|------:|
-| Surival   |  中1  |   右1 |
-| pclass   |  中2  |   右2 |
-| sex   |  中3  |   右3 |
-| Age   |  中1  |   右1 |
-| sibsp   |  中2  |   右2 |
-| parch   |  中3  |   右3 |
-| ticket   |  中1  |   右1 |
-| fare   |  中2  |   右2 |
-| cabin   |  中3  |   右3 |
-| embarked   |  中1  |   右1 |
+|:-----:|:------|:------|
+| Survival   |  是否存活  |   0 = No, 1 = Yes |
+| pclass   |  船票等級  |   1 = 1st, 2 = 2nd, 3 = 3rd |
+| sex   |  性別  |    |
+| Age   |  年齡  |    |
+| sibsp   |  兄弟或伴侶也在船上的數量  |    |
+| parch   |  父母或子女也在船上的數量  |    |
+| ticket   |  船票號碼  |    |
+| fare   |  乘客費用  |    |
+| cabin   |  船艙號碼  |    |
+| embarked   |  登船的港口  |   C = Cherbourg, Q = Queenstown, S = Southampton |
+
+Categorical Variable : Survival / pclass / sex / ticket / cabin / embarked
+
+Continuous Variable: Age / sibsp / parch / fare
 
 ### B. Statistics
-Survived          Pclass     
-Min.   :0.0000   Min.   :1.000  
-1st Qu.:0.0000   1st Qu.:2.000  
-Median :0.0000   Median :3.000  
-Mean   :0.3838   Mean   :2.309  
-3rd Qu.:1.0000   3rd Qu.:3.000  
-Max.   :1.0000   Max.   :3.000  
+Continuous Variable
+|  | Age | sibsp | parch | fare |
+|---|:---:|:---:|:---:|:---:|
+|Min.|0.42|||
+|1st Qu.|20.12|||
+|Median|28|||
+|Mean|29.7|||
+|3rd Qu.|38|||
+|Max.|80|||
+|NA's|177|||
+
+
+
 
 ### C. Correlation
 X1 X2 X3
-## 2. Regularizing
+## 2. Data Processing
+### A. One-Hot-Encoding
+
+### B. Standardized
 
 
 `https://www.kaggle.com/c/titanic/overview`
