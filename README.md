@@ -1,5 +1,5 @@
 # Titanic - Machine Learning from Disaster ( Practice )
-* Data
+* Exploratory Data Analysis
   * Variables
   * Correlation
   * PCA
@@ -12,7 +12,7 @@
 * Evaluation
 * Result
 
-## DATA
+## EXPLORATORY DATA ANALYSIS
 ### Variables
 | Variable | Definition | Key | Class |
 |:-----:|:------|:------|:------|
@@ -40,23 +40,46 @@
 |NA's|177|0|0|0|
 
 * Categorical Variable : Survival / pclass / sex / ticket / cabin / embarked
-  * Survival
 
-  * Pclass
+#### Pclass
 
-  * Sex
+![image](Rplot_Pclass.jpeg)
+#### Sex
 
-  * Embarked
+![image](Rplot_Sex.jpeg)
+#### Embarked
 
+![image](Rplot_Embarked.jpeg)
 
-### Correlation
+#### Survival
+
+![image](Rplot_Survived_Pclass.jpeg)
+
+由各船票等級佔存活及死亡的人數比例當中可以發現，第三等級的人數佔整體人數超過一半，且死亡率相較於其他兩級有顯著的增加。
+
+![image](Rplot_Survived_Sex.jpeg)
+
+由各性別佔存活及死亡的人數比例當中可以發現，男性人數佔比超過一半，且男性的死亡率明顯高於女性。
+
+![image](Rplot_Survived_Embarked.jpeg)
+
+由各登船港口佔存活及死亡的人數比例當中可以發現，在Southampton登船的人數佔整體大約三分之二，但在各登船港口間的死亡率並無顯著不同。
+
+### 2. Correlation
 X1 X2 X3
-## Data Processing
+## DATA PROCESSING
 ### One-Hot-Encoding
 
 ### Standardized
 
 
-`https://www.kaggle.com/c/titanic/overview`
+## MODELING
+
+## EVALUATION
+
+## RESULT
+
+## REFERENCE
+<https://www.kaggle.com/c/titanic/overview>
 
 
