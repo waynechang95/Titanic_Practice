@@ -6,7 +6,6 @@
 * Data Processing
   * One-hot-encoding
   * Standardized
-* Cross-Validation
 * Modeling
   * Decision Tree
   * Randon Forest
