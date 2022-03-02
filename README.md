@@ -67,6 +67,8 @@
 
 ### 2. Correlation
 X1 X2 X3
+### 3. Principal Component Analysis
+
 ## DATA PROCESSING
 ### One-Hot-Encoding
 
