@@ -1,7 +1,6 @@
 # Titanic - Machine Learning from Disaster ( Practice )
 * Data
   * Variables
-  * Statistics
   * Correlation
   * PCA
 * Data Processing
@@ -14,8 +13,8 @@
 * Evaluation
 * Result
 
-## 1. DATA
-### A. Variables
+## DATA
+### Variables
 | Variable | Definition | Key |
 |:-----:|:------|:------|
 | Survival   |  是否存活  |   0 = No, 1 = Yes |
@@ -29,31 +28,34 @@
 | cabin   |  船艙號碼  |    |
 | embarked   |  登船的港口  |   C = Cherbourg, Q = Queenstown, S = Southampton |
 
-Categorical Variable : Survival / pclass / sex / ticket / cabin / embarked
+#### Continuous Variable: Age / sibsp / parch / fare
 
-Continuous Variable: Age / sibsp / parch / fare
-
-### B. Statistics
-Continuous Variable
 |  | Age | sibsp | parch | fare |
 |---|:---:|:---:|:---:|:---:|
-|Min.|0.42|||
-|1st Qu.|20.12|||
-|Median|28|||
-|Mean|29.7|||
-|3rd Qu.|38|||
-|Max.|80|||
-|NA's|177|||
+|Min.|0.42|0|0|0|
+|1st Qu.|20.12|0|0|79.1|
+|Median|28|0|0|14.45|
+|Mean|29.7|0.523|0.382|32.2|
+|3rd Qu.|38|1|0|31|
+|Max.|80|8|6|512.33|
+|NA's|177|0|0|0|
 
+#### Categorical Variable : Survival / pclass / sex / ticket / cabin / embarked
 
+Survival
 
+pclass
 
-### C. Correlation
+sex
+
+embarked
+
+### Correlation
 X1 X2 X3
-## 2. Data Processing
-### A. One-Hot-Encoding
+## Data Processing
+### One-Hot-Encoding
 
-### B. Standardized
+### Standardized
 
 
 `https://www.kaggle.com/c/titanic/overview`
