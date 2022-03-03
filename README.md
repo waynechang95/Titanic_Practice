@@ -39,6 +39,22 @@
 |Max.|80|8|6|512.33|
 |NA's|177|0|0|0|
 
+#### Age
+![image](Boxplot/Rplot_Age_hist.jpeg)
+![image](Boxplot/Rplot_Age_box.jpeg)
+
+年齡的分布趨近於常態分佈，平均年齡為29.7歲，在65歲以上的部分存在少數離群值，但整體來看不影響分布情形。
+#### SibSp
+![image](Boxplot/Rplot_SibSp_hist.jpeg)
+![image](Boxplot/Rplot_SibSp_box.jpeg)
+#### Parch
+![image](Boxplot/Rplot_Parch_hist.jpeg)
+![image](Boxplot/Rplot_Parch_box.jpeg)
+#### Fare
+![image](Boxplot/Rplot_Fare_hist.jpeg)
+![image](Boxplot/Rplot_Fare_box.jpeg)
+
+
 * Categorical Variable : Survival / pclass / sex / ticket / cabin / embarked
 
 #### Pclass
