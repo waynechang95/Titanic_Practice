@@ -1,12 +1,13 @@
 # TITANIC - MACHINE LEARNING FROM DIASATER ( R PRACTICE )
 * Exploratory Data Analysis
   * Variables
-  * Correlation
 * Data Processing
   * One-hot-encoding
+  * Missing Value
   * Standardized
   * Pincipal Component Analysis
 * Modeling
+  * Logistic Regression
   * Decision Tree
   * Randon Forest
 * Evaluation
@@ -42,18 +43,23 @@
 #### Age
 ![image](Boxplot/Rplot_Age_hist.jpeg)
 ![image](Boxplot/Rplot_Age_box.jpeg)
+![image](Plot/Rplot_Age_Survived.jpeg)
 
 年齡的分布趨近於常態分佈，平均年齡為29.7歲，在65歲以上的部分存在少數離群值，但整體來看不影響分布情形。
 #### SibSp
 ![image](Boxplot/Rplot_SibSp_hist.jpeg)
 ![image](Boxplot/Rplot_SibSp_box.jpeg)
+![image](Plot/Rplot_SibSp_Survived.jpeg)
 #### Parch
 ![image](Boxplot/Rplot_Parch_hist.jpeg)
 ![image](Boxplot/Rplot_Parch_box.jpeg)
+![image](Plot/Rplot_Parch_Survived.jpeg)
 #### Fare
 ![image](Boxplot/Rplot_Fare_hist.jpeg)
 ![image](Boxplot/Rplot_Fare_box.jpeg)
+![image](Plot/Rplot_Fare_Survived.jpeg)
 
+兄弟或伴侶也在船上的數量、父母或子女也在船上的數量以及乘客費用的分布皆呈現右偏的情形，而在分別觀察存活人數及死亡人數的分布後，兩者間並沒有存在著明顯不同的分布。
 
 * Categorical Variable : Survival / pclass / sex / ticket / cabin / embarked
 
@@ -80,10 +86,6 @@
 ![image](Rplot_Survived_Embarked.jpeg)
 
 由各登船港口佔存活及死亡的人數比例當中可以發現，在Southampton登船的人數佔整體大約三分之二，但在各登船港口間的死亡率並無顯著不同。
-
-### 2. Correlation
-X1 X2 X3
-### 3. Principal Component Analysis
 
 ## DATA PROCESSING
 ### One-Hot-Encoding
