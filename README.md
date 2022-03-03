@@ -2,10 +2,10 @@
 * Exploratory Data Analysis
   * Variables
   * Correlation
-  * PCA
 * Data Processing
   * One-hot-encoding
   * Standardized
+  * Pincipal Component Analysis
 * Modeling
   * Decision Tree
   * Randon Forest
