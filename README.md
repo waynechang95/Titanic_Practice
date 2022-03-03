@@ -1,4 +1,4 @@
-# Titanic - Machine Learning from Disaster ( Practice )
+# TITANIC - MACHINE LEARNING FROM DIASATER ( R PRACTICE )
 * Exploratory Data Analysis
   * Variables
   * Correlation
