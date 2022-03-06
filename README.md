@@ -92,9 +92,9 @@
 ||Age|Embarked|
 |:--:|:--:|:--:|
 |NA's|177|2|
-|Mean|29.7||
+|Mean|**29.7**||
 |Median|28||
-|Mode||S|
+|Mode||**S**|
 
 * Age
 
