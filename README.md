@@ -88,12 +88,60 @@
 由各登船港口佔存活及死亡的人數比例當中可以發現，在Southampton登船的人數佔整體大約三分之二，但在各登船港口間的死亡率並無顯著不同。
 
 ## DATA PROCESSING
-### One-Hot-Encoding
+### Missing Value
+||Age|Embarked|
+|:--:|:--:|:--:|
+|NA's|177|2|
+|Mean|29.7||
+|Median|28||
+|Mode||S|
 
+* Age
+
+我們透過其他乘客的平均數來填補遺失值，以確保在平均數及變異數不變的情況下，年齡的變數將維持在原本的分配上。
+
+* Embarked
+
+登船港口的資料中僅有兩筆遺失值，但兩筆資料皆屬於存活人口，故不考慮刪除，而各港口中又以Southampton的人數最多，故以Southampton來填補遺失值，保留整體資料趨勢。
+
+### One-Hot-Encoding
+* Sex
+
+將原本的female/male分別改成0/1
+* Pclass
+
+將原本的1/2/3分拆成兩個變數pclass_1和pclass_2( 1:(1,0) / 2:(0,1) / 3:(0,0) )
+* Embarked
+
+將原本的C/Q/S分拆成兩個變數embarked_C和embarked_Q( C:(1,0) / Q:(0,1) / S:(0,0) )
 ### Standardized
 
+### Principal Component Analysis
 
 ## MODELING
+### Logistic Regression
+|Set|Training|Validation|Testing|
+|:--:|:--:|:--:|:--:|
+|fold1||||
+|fold2||||
+|fold3||||
+|fold4||||
+
+### Decision Tree
+|Set|Training|Validation|Testing|
+|:--:|:--:|:--:|:--:|
+|fold1||||
+|fold2||||
+|fold3||||
+|fold4||||
+
+### Random Forest
+|Set|Training|Validation|Testing|
+|:--:|:--:|:--:|:--:|
+|fold1||||
+|fold2||||
+|fold3||||
+|fold4||||
 
 ## EVALUATION
 
