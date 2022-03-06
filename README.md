@@ -116,32 +116,33 @@
 將原本的C/Q/S分拆成兩個變數embarked_C和embarked_Q( C:(1,0) / Q:(0,1) / S:(0,0) )
 ### Standardized
 
+將Age/Fare/SibSp/Parch四個變數分別進行標準化(Z標準化)
 ### Principal Component Analysis
 
 ## MODELING
 ### Logistic Regression
 |Set|Training|Validation|Testing|
 |:--:|:--:|:--:|:--:|
-|fold1||||
-|fold2||||
-|fold3||||
-|fold4||||
+|fold1|0.81|0.72|0.83|
+|fold2|0.82|0.82|0.73|
+|fold3|0.80|0.80|0.81|
+|fold4|0.80|0.83|0.79|
 
 ### Decision Tree
 |Set|Training|Validation|Testing|
 |:--:|:--:|:--:|:--:|
-|fold1||||
-|fold2||||
-|fold3||||
-|fold4||||
+|fold1|0.84|0.73|0.83|
+|fold2|0.83|0.81|0.72|
+|fold3|0.83|0.78|0.80|
+|fold4|0.82|0.85|0.76|
 
 ### Random Forest
 |Set|Training|Validation|Testing|
 |:--:|:--:|:--:|:--:|
-|fold1||||
-|fold2||||
-|fold3||||
-|fold4||||
+|fold1|0.83|0.79|0.81|
+|fold2|0.82|0.84|0.78|
+|fold3|0.82|0.80|0.83|
+|fold4|0.83|0.85|0.82|
 
 ## EVALUATION
 
