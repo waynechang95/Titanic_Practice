@@ -10,8 +10,8 @@
   * Logistic Regression
   * Decision Tree
   * Randon Forest
-* Evaluation
 * Result
+* Evaluation
 
 ## EXPLORATORY DATA ANALYSIS
 ### Variables
@@ -165,7 +165,7 @@
 |fold6|0.83|0.81|0.81|
 |AVG|0.82|0.82|0.82|
 
-## EVALUATION
+## RESULT
 |Model|Training|Validation|Testing|
 |:--:|:--:|:--:|:--:|
 |Logistic Regression|0.82|0.80|0.81|
@@ -174,7 +174,21 @@
 
 就羅吉斯迴歸及隨機森林兩個模型來看，訓練集及測試集皆有達到百分之八十以上的預測水準，而其中又以隨機森林在測試集上有更好的表現。而至於決策樹模型，雖然在訓練集上有超過百分之九十的預測水準，但在驗證集及測試集上卻只有接近百分之八十的預測水準，明顯產生了Overfitting的情形。故就整體來看，我們會傾向使用隨機森林模型。
 
-## RESULT
+## EVALUATION
+* Importance
+
+||           MeanDecreaseGini|
+|:--:|:--:|
+|Sex           |   104.430115|
+|Age           |    61.652213|
+|Fare          |    75.609800|
+|SibSp         |    19.033580|
+|Parch         |    13.622075|
+|Pclass_1      |    18.092440|
+|Pclass_2      |    13.096576|
+|Embarked_C    |     7.361737|
+|Embarked_Q    |     4.478558|
+
 
 ## REFERENCE
 <https://www.kaggle.com/c/titanic/overview>
