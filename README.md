@@ -121,30 +121,58 @@
 
 ## MODELING
 ### Logistic Regression
+
+`fmla <- 'Survived~Sex+Age+Fare+SibSp+Parch+Pclass_1+Pclass_2+Embarked_C+Embarked_Q'`
+`threshold = 0.6`
+
 |Set|Training|Validation|Testing|
 |:--:|:--:|:--:|:--:|
-|fold1|0.81|0.72|0.83|
-|fold2|0.82|0.82|0.73|
-|fold3|0.80|0.80|0.81|
-|fold4|0.80|0.83|0.79|
+|fold1|0.83|0.74|0.83|
+|fold2|0.82|0.82|0.74|
+|fold3|0.81|0.78|0.84|
+|fold4|0.81|0.85|0.78|
+|fold5|0.81|0.82|0.84|
+|fold6|0.81|0.82|0.82|
+|AVG|0.82|0.80|0.81|
 
 ### Decision Tree
+
+`fmla <- 'Survived~Sex+Age+Fare+SibSp+Parch+Pclass_1+Pclass_2+Embarked_C+Embarked_Q'`
+`minsplit = 5,cp = 0.0001,maxdepth=30`
+
 |Set|Training|Validation|Testing|
 |:--:|:--:|:--:|:--:|
-|fold1|0.84|0.73|0.83|
-|fold2|0.83|0.81|0.72|
-|fold3|0.83|0.78|0.80|
-|fold4|0.82|0.85|0.76|
+|fold1|0.92|0.77|0.73|
+|fold2|0.91|0.78|0.74|
+|fold3|0.92|0.80|0.80|
+|fold4|0.92|0.83|0.80|
+|fold5|0.91|0.79|0.81|
+|fold6|0.91|0.78|0.78|
+|AVG|0.92|0.79|0.78|
 
 ### Random Forest
+
+`fmla <- 'Survived~Sex+Age+Fare+SibSp+Parch+Pclass_1+Pclass_2+Embarked_C+Embarked_Q'`
+`ntree = 500`
+
 |Set|Training|Validation|Testing|
 |:--:|:--:|:--:|:--:|
-|fold1|0.83|0.79|0.81|
-|fold2|0.82|0.84|0.78|
-|fold3|0.82|0.80|0.83|
-|fold4|0.83|0.85|0.82|
+|fold1|0.83|0.79|0.82|
+|fold2|0.81|0.84|0.79|
+|fold3|0.82|0.78|0.84|
+|fold4|0.83|0.83|0.78|
+|fold5|0.82|0.83|0.85|
+|fold6|0.83|0.81|0.81|
+|AVG|0.82|0.82|0.82|
 
 ## EVALUATION
+|Model|Training|Validation|Testing|
+|:--:|:--:|:--:|:--:|
+|Logistic Regression|0.82|0.80|0.81|
+|Decision Tree|0.92|0.79|0.78|
+|Random Forest|0.82|0.82|0.82|
+
+就羅吉斯迴歸及隨機森林兩個模型來看，訓練集及測試集皆有達到百分之八十以上的預測水準，而其中又以隨機森林在測試集上有更好的表現。而至於決策樹模型，雖然在訓練集上有超過百分之九十的預測水準，但在驗證集及測試集上卻只有接近百分之八十的預測水準，明顯產生了Overfitting的情形。故就整體來看，我們會傾向使用隨機森林模型。
 
 ## RESULT
 
